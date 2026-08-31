@@ -366,6 +366,25 @@ section {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  position: relative;
+  padding: 2rem 3rem;
+}
+.diiv-label {
+  position: absolute;
+  font-family: "Bradley Hand", "Papyrus", cursive;
+  font-size: 1.6rem;
+  color: #1d4ed8;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  transform: rotate(-8deg);
+  pointer-events: none;
+}
+.diiv-label.sempre { left: -0.5rem; top: 40%; transform: rotate(-90deg); }
+.diiv-label.nunca { right: -0.5rem; top: 40%; transform: rotate(90deg); }
+.diiv-label.question {
+  left: 40%; bottom: -1.5rem;
+  font-size: 2rem;
+  transform: rotate(-4deg);
 }
 .diiv1, .diiv2 {
   border: 2px solid var(--red);
@@ -534,6 +553,21 @@ section {
   font-size: 1.4rem;
   color: var(--red);
   margin-top: 1rem;
+}
+.evoheading .subheading {
+  font-family: "Bradley Hand", "Papyrus", cursive;
+  font-size: 1.1rem;
+  color: #1d4ed8;
+  margin-top: 0.4rem;
+  font-style: normal;
+}
+.marginnote {
+  font-family: "Bradley Hand", "Papyrus", cursive !important;
+  font-size: 1.1rem !important;
+  color: #1d4ed8 !important;
+  margin-top: 1rem !important;
+  transform: rotate(-1.5deg);
+  display: inline-block;
 }
 .evoimage {
   grid-column: 1 / -1;
