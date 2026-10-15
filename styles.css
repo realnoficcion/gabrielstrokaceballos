@@ -900,10 +900,9 @@ a.contactcard:hover {
 }
 a.contactcard:hover .label { color: var(--paper); opacity: 0.7; }
 .contactcard .value {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-style: italic;
-  word-break: break-all;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
 }
 .finalborder {
   font-family: sans-serif;
