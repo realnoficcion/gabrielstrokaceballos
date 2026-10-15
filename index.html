@@ -14,11 +14,18 @@
 </head>
 <body>
 
+<!-- LANGUAGE TOGGLE -->
+<div class="lang-toggle" id="lang-toggle">
+  <button type="button" data-lang="en" class="lang-btn active">EN</button>
+  <span class="lang-sep">|</span>
+  <button type="button" data-lang="pt" class="lang-btn">PT</button>
+</div>
+
 <!-- ENTRANCE OVERLAY -->
 <div class="overlay" id="overlay">
   <button id="enter">
-    <span class="enter-line1">↳ cross the threshold</span>
-    <span class="enter-line2">(the words are already there)</span>
+    <span class="enter-line1" data-i18n="enter.line1">↳ cross the threshold</span>
+    <span class="enter-line2" data-i18n="enter.line2">(the words are already there)</span>
   </button>
   <div class="bottomoverly">
     <pre class="asciiart">
@@ -38,14 +45,14 @@
     <div class="numblock">
       <h1>9</h1>
       <ul>
-        <li>Poetry</li>
-        <li>Fiction</li>
-        <li>Essays</li>
-        <li>Language</li>
-        <li>Silence</li>
-        <li>Village</li>
-        <li>Deadline</li>
-        <li>Ghost</li>
+        <li data-i18n="aa.poetry">Poetry</li>
+        <li data-i18n="aa.fiction">Fiction</li>
+        <li data-i18n="aa.essays">Essays</li>
+        <li data-i18n="aa.language">Language</li>
+        <li data-i18n="aa.silence">Silence</li>
+        <li data-i18n="aa.village">Village</li>
+        <li data-i18n="aa.deadline">Deadline</li>
+        <li data-i18n="aa.ghost">Ghost</li>
       </ul>
     </div>
   </section>
@@ -67,7 +74,7 @@
       <div class="spin">◐ ◑ ◒ ◓</div>
     </div>
     <div class="welcomemessage">
-      <h1>Welcome!</h1>
+      <h1 data-i18n="bb.welcome">Welcome!</h1>
       <div class="welcomeimg">
         <pre class="bigascii">
    .-.   .-.
@@ -88,7 +95,7 @@
       </ul>
     </div>
     <div class="side-note">
-      <p>a site for<br /><strong>Gabriel Stroka Ceballos</strong></p>
+      <p><span data-i18n="bb.sitefor">a site for</span><br /><strong>Gabriel Stroka Ceballos</strong></p>
     </div>
   </section>
 
@@ -99,8 +106,7 @@
 ✦   ✦   ✦   ✦   ✦   ✦   ✦   ✦   ✦   ✦   ✦   ✦   ✦   ✦   ✦   ✦
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     </pre>
-    <pre class="wreath">
-        .-~~~-.
+    <pre class="wreath" data-i18n="cc.found">        .-~~~-.
        (       )
         `-~~~-'
          found
@@ -124,23 +130,22 @@
     <div class="eeee">
       <div class="flexer">
         <div class="framedbox">
-          <pre>
-   ,--~~,
+          <pre data-i18n="ee.clock">   ,--~~,
   (      )
    `~~~~'
    clock
           </pre>
         </div>
         <div class="framedbox">
-          <p class="trapped">t<br/>r<br/>a<br/>p<br/>p<br/>e<br/>d<br/> <br/>i<br/>n<br/> <br/>l<br/>a<br/>n<br/>g<br/>u<br/>a<br/>g<br/>e</p>
+          <p class="trapped" data-i18n="ee.trapped">t<br/>r<br/>a<br/>p<br/>p<br/>e<br/>d<br/> <br/>i<br/>n<br/> <br/>l<br/>a<br/>n<br/>g<br/>u<br/>a<br/>g<br/>e</p>
         </div>
       </div>
       <div class="links">
-        <p>There is no way to know how many words.</p>
-        <p>There is no way to know how many words.</p>
-        <p>There is no way to know how many words.</p>
-        <p>There is no way to know how many words.</p>
-        <p>There is no way to know how many words.</p>
+        <p data-i18n="ee.nowords">There is no way to know how many words.</p>
+        <p data-i18n="ee.nowords">There is no way to know how many words.</p>
+        <p data-i18n="ee.nowords">There is no way to know how many words.</p>
+        <p data-i18n="ee.nowords">There is no way to know how many words.</p>
+        <p data-i18n="ee.nowords">There is no way to know how many words.</p>
       </div>
     </div>
   </section>
@@ -148,7 +153,7 @@
   <!-- SECTION FF: COUNTER -->
   <section class="ff">
     <div class="counter">
-      <span class="counter-label">visitors&nbsp;</span>
+      <span class="counter-label" data-i18n="ff.visitors">visitors&nbsp;</span>
       <span class="counter-nums" id="counter">0000000</span>
     </div>
     <pre class="thumbsline">
@@ -161,11 +166,10 @@
     <div class="coin">
       <div class="coincoin">$</div>
     </div>
-    <div class="flipcoin">_,.-'~'-.,__,.- Flip A Word -.,__,.-'~'-.,_</div>
+    <div class="flipcoin" data-i18n="gg.flip">_,.-'~'-.,__,.- Flip A Word -.,__,.-'~'-.,_</div>
     <div class="spreadtwo">
       <div>
-        <pre class="tree">
-          &
+        <pre class="tree" data-i18n="gg.pyramid">          &
          &&&
         &&&&&
        &&&&&&&
@@ -175,8 +179,7 @@
         </pre>
       </div>
       <div>
-        <pre class="tree upside">
-        resemblance vortex
+        <pre class="tree upside" data-i18n="gg.vortex">        resemblance vortex
          |||
       &&&&&&&&&
        &&&&&&&
@@ -187,8 +190,7 @@
       </div>
     </div>
     <div class="sigil">
-      <pre>
-      ✧
+      <pre data-i18n="gg.asterism">      ✧
     ✧ ✧ ✧
   ✧ ✧ ✧ ✧ ✧
     ✧ ✧ ✧
@@ -198,10 +200,10 @@
     </div>
     <div class="evolution">
       <div class="evotext">
-        <p>Whoever wants to speak has to bet. We're going to lose, we're all always going to lose. Let's bet that language really is forgetting. So when we try to say something, as cavemen, we point at the singular and say &ldquo;stone!&rdquo;, stone as I see it. But to the extent that the stone stops being this stone in my hand, under the particular perspective of my eyes, under the light present in this cave, language lies. Stone is now a word. And the word despairs, straining to touch reality. Will it create another one instead?</p>
+        <p data-i18n="gg.cavemen">Whoever wants to speak has to bet. We're going to lose, we're all always going to lose. Let's bet that language really is forgetting. So when we try to say something, as cavemen, we point at the singular and say &ldquo;stone!&rdquo;, stone as I see it. But to the extent that the stone stops being this stone in my hand, under the particular perspective of my eyes, under the light present in this cave, language lies. Stone is now a word. And the word despairs, straining to touch reality. Will it create another one instead?</p>
       </div>
       <div class="evoheading">
-        <p>Remember to Release the Arrow</p>
+        <p data-i18n="gg.arrow">Remember to Release the Arrow</p>
       </div>
       <div class="evoimage">
         <pre>
@@ -217,7 +219,7 @@
         </pre>
       </div>
       <div class="evoimagecredit">
-        <p>&copy; 2026 by G.S.C. — all voices reserved</p>
+        <p data-i18n="gg.credit">&copy; 2026 by G.S.C. — all voices reserved</p>
       </div>
     </div>
   </section>
@@ -225,25 +227,25 @@
   <!-- SECTION II: LONG TEXT -->
   <section class="ii">
     <div class="simple">
-      <p><span class="dropcap">A</span>bout the writer. Gabriel Stroka Ceballos holds a degree in Communications from Faculdade Cásper Líbero, in São Paulo, and completed a degree in Philosophy at the University of São Paulo (USP), graduating with a 9.2 GPA. That return to formal study was driven less by career strategy than by an old, unresolved curiosity about how thought and language shape one another.</p>
-      <p class="heading"><span class="spanbreak">.:*~*:._.:*~*:._.:*~*:.</span> Published Works <span class="spanbreak">.:*~*:._.:*~*:._.:*~*:.</span></p>
+      <p><span class="dropcap">A</span><span data-i18n="ii.about">bout the writer. Gabriel Stroka Ceballos holds a degree in Communications from Faculdade Cásper Líbero, in São Paulo, and completed a degree in Philosophy at the University of São Paulo (USP), graduating with a 9.2 GPA. That return to formal study was driven less by career strategy than by an old, unresolved curiosity about how thought and language shape one another.</span></p>
+      <p class="heading"><span class="spanbreak">.:*~*:._.:*~*:._.:*~*:.</span> <span data-i18n="ii.publishedworks">Published Works</span> <span class="spanbreak">.:*~*:._.:*~*:._.:*~*:.</span></p>
       <ul class="pubs">
-        <li><span class="y">2015</span> <span class="t">Explicação</span> <span class="m">poem &middot; 4th place, UFLA Literary Contest</span></li>
-        <li><span class="y">2015</span> <span class="t">O Voto</span> <span class="m">poem &middot; finalist, 28th FEPOC</span></li>
-        <li><span class="y">2017</span> <span class="t">Pássaro marrom &amp; Genealogia</span> <span class="m">poems &middot; Revista Sete Faces, 16th ed.</span></li>
-        <li><span class="y">2018</span> <span class="t">Penas, Fluidos e Bisturis</span> <span class="m">collective anthology &middot; Supernova</span></li>
-        <li><span class="y">2020</span> <span class="t">Poems</span> <span class="m">Revista Subversa — No. 4</span></li>
-        <li class="feature"><span class="y">2022</span> <span class="t">Não foi assim que nos pediram os que morriam?</span> <span class="m">poetry collection &middot; Urutau</span></li>
-        <li><span class="y">2022</span> <span class="t">Siesta</span> <span class="m">poem &middot; Jornal Relevo</span></li>
-        <li class="feature"><span class="y">2025</span> <span class="t">Coração pequeno</span> <span class="m">novel &middot; Cachalote</span></li>
-        <li><span class="y">2026</span> <span class="t">Um cachorro mordendo o próprio rabo</span> <span class="m">essay &middot; Revista O Odisseu</span></li>
+        <li><span class="y">2015</span> <span class="t">Explicação</span> <span class="m" data-i18n="pub.explicacao">poem &middot; 4th place, UFLA Literary Contest</span></li>
+        <li><span class="y">2015</span> <span class="t">O Voto</span> <span class="m" data-i18n="pub.voto">poem &middot; finalist, 28th FEPOC</span></li>
+        <li><span class="y">2017</span> <span class="t">Pássaro marrom &amp; Genealogia</span> <span class="m" data-i18n="pub.passaro">poems &middot; Revista Sete Faces, 16th ed.</span></li>
+        <li><span class="y">2018</span> <span class="t">Penas, Fluidos e Bisturis</span> <span class="m" data-i18n="pub.penas">collective anthology &middot; Supernova</span></li>
+        <li><span class="y">2020</span> <span class="t">Poems</span> <span class="m" data-i18n="pub.subversa">Revista Subversa — No. 4</span></li>
+        <li class="feature"><span class="y">2022</span> <span class="t">Não foi assim que nos pediram os que morriam?</span> <span class="m" data-i18n="pub.urutau">poetry collection &middot; Urutau</span></li>
+        <li><span class="y">2022</span> <span class="t">Siesta</span> <span class="m" data-i18n="pub.siesta">poem &middot; Jornal Relevo</span></li>
+        <li class="feature"><span class="y">2025</span> <span class="t">Coração pequeno</span> <span class="m" data-i18n="pub.coracao">novel &middot; Cachalote</span></li>
+        <li><span class="y">2026</span> <span class="t">Um cachorro mordendo o próprio rabo</span> <span class="m" data-i18n="pub.odisseu">essay &middot; Revista O Odisseu</span></li>
       </ul>
-      <p class="heading"><span class="spanbreak">.:*~*:._.:*~*:._.:*~*:.</span> Language Theory <span class="spanbreak">.:*~*:._.:*~*:._.:*~*:.</span></p>
-      <p>The literary practice began with poetry and has developed across poetry, fiction, and essays on language. In 2022, he published his poetry collection <em>Não foi assim que nos pediram os que morriam?</em> with Urutau, followed by the novel <em>Coração pequeno</em> with Cachalote in 2025. The novel is built around a sustained stream of consciousness, interrupted by ruptures in awareness.</p>
-      <p>His literary writing has developed alongside a long professional engagement with language in advertising and communications, as well as academic work in Philosophy.</p>
+      <p class="heading"><span class="spanbreak">.:*~*:._.:*~*:._.:*~*:.</span> <span data-i18n="ii.languagetheory">Language Theory</span> <span class="spanbreak">.:*~*:._.:*~*:._.:*~*:.</span></p>
+      <p data-i18n="ii.practice">The literary practice began with poetry and has developed across poetry, fiction, and essays on language. In 2022, he published his poetry collection <em>Não foi assim que nos pediram os que morriam?</em> with Urutau, followed by the novel <em>Coração pequeno</em> with Cachalote in 2025. The novel is built around a sustained stream of consciousness, interrupted by ruptures in awareness.</p>
+      <p data-i18n="ii.alongside">His literary writing has developed alongside a long professional engagement with language in advertising and communications, as well as academic work in Philosophy.</p>
     </div>
     <div class="cycle">
-      <p>the arrow follows the spirit<br/>the arrow follows the spirit<br/>the arrow follows the spirit<br/>the arrow follows the spirit</p>
+      <p data-i18n="ii.cycle">the arrow follows the spirit<br/>the arrow follows the spirit<br/>the arrow follows the spirit<br/>the arrow follows the spirit</p>
     </div>
     <div class="bleedingrose">
       <pre class="rose">
@@ -259,24 +261,24 @@
 
   <!-- SECTION JJ: PUBLISHED WORKS LINKS -->
   <section class="pubworks">
-    <h2 class="pubworks-title">Published Works</h2>
+    <h2 class="pubworks-title" data-i18n="pubworks.title">Published Works</h2>
     <ul class="pubworks-list">
       <li>
         <a href="https://aboio.com.br/loja/produto/coracao-pequeno?srsltid=AfmBOooVTgytxCWJqHNUE6yKp-LO97DL5vlTL7UE38DBKwHq7sJLwgXs" target="_blank" rel="noopener">
           <span class="pubworks-name">Coração Pequeno</span>
-          <span class="pubworks-meta">novel &middot; Aboio</span>
+          <span class="pubworks-meta" data-i18n="pubworks.coracao">novel &middot; Aboio</span>
         </a>
       </li>
       <li>
         <a href="https://editoraurutau.com/titulo/nao-foi-assim-que-nos-pediram-os-que-morriam" target="_blank" rel="noopener">
           <span class="pubworks-name">Não foi assim que nos pediram os que morriam?</span>
-          <span class="pubworks-meta">poetry &middot; Urutau</span>
+          <span class="pubworks-meta" data-i18n="pubworks.urutau">poetry &middot; Urutau</span>
         </a>
       </li>
       <li>
         <a href="https://oodisseu.com.br/um-cachorro-mordendo-o-proprio-rabo-a-vida-intermitente-da-linguagem/" target="_blank" rel="noopener">
-          <span class="pubworks-name">Ensaio</span>
-          <span class="pubworks-meta">essay &middot; Revista O Odisseu</span>
+          <span class="pubworks-name" data-i18n="pubworks.ensaio-name">Ensaio</span>
+          <span class="pubworks-meta" data-i18n="pubworks.ensaio">essay &middot; Revista O Odisseu</span>
         </a>
       </li>
     </ul>
@@ -284,25 +286,25 @@
 
   <!-- SECTION KK: CONTACT / END -->
   <section class="kk">
-    <div class="globalwarming">****&ldquo;C*o*n*t*a*c*t&rdquo;****<span class="spanbreak">el vate</span></div>
+    <div class="globalwarming">****<span data-i18n="kk.contact">&ldquo;C*o*n*t*a*c*t&rdquo;</span>****<span class="spanbreak" data-i18n="kk.elvate">el vate</span></div>
     <div class="contactgrid">
-      <a href="mailto:gabrielshokaceballos@gmail.com" class="contactcard">
-        <span class="label">write to the ghost</span>
-        <span class="value">gabrielshokaceballos@gmail.com</span>
+      <a href="mailto:gabrielstrokaceballos@gmail.com" class="contactcard">
+        <span class="label" data-i18n="kk.writeghost">write to the ghost</span>
+        <span class="value">gabrielstrokaceballos@gmail.com</span>
       </a>
       <div class="contactcard">
-        <span class="label">languages</span>
+        <span class="label" data-i18n="kk.languages">languages</span>
         <span class="value">PT &middot; EN &middot; ES &middot; DE</span>
       </div>
       <div class="contactcard">
-        <span class="label">based in</span>
+        <span class="label" data-i18n="kk.basedin">based in</span>
         <span class="value">São Paulo / Rio</span>
       </div>
     </div>
     <pre class="finalborder">
 ✷ ✷ ✷ ✷ ✷ ✷ ✷ ✷ ✷ ✷ ✷ ✷ ✷ ✷ ✷ ✷ ✷ ✷ ✷ ✷
     </pre>
-    <p class="endnote"><em>&mdash; act, act, act.</em></p>
+    <p class="endnote"><em data-i18n="kk.endnote">&mdash; act, act, act.</em></p>
   </section>
 
 </div>
@@ -315,7 +317,7 @@
     <span class="time">/</span>
     <span id="duration" class="time">∞</span>
   </div>
-  <span class="mini-note">Silence playing in the background</span>
+  <span class="mini-note" data-i18n="audio.silence">Silence playing in the background</span>
 </div>
 
 <script src="script.js"></script>

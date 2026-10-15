@@ -32,6 +32,39 @@ body:not(.ready) .wrapper,
 body:not(.ready) #audio-player-container { display: none; }
 
 /* ============================================
+   LANGUAGE TOGGLE
+   ============================================ */
+.lang-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: "Courier New", monospace;
+  font-size: 0.85rem;
+  background: var(--paper);
+  border: 2px solid var(--red);
+  padding: 0.3rem 0.6rem;
+  letter-spacing: 0.15em;
+}
+.lang-btn {
+  background: transparent;
+  border: none;
+  color: var(--ink);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  padding: 0.1rem 0.2rem;
+  transition: color 0.2s;
+}
+.lang-btn:hover { color: var(--red); }
+.lang-btn.active { color: var(--red); font-weight: bold; }
+.lang-sep { color: var(--dim); }
+
+/* ============================================
    ENTRANCE OVERLAY
    ============================================ */
 .overlay {
@@ -900,7 +933,7 @@ a.contactcard:hover {
 }
 a.contactcard:hover .label { color: var(--paper); opacity: 0.7; }
 .contactcard .value {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-style: italic;
   white-space: nowrap;
 }
