@@ -80,8 +80,9 @@ const translations = {
     "gg.arrow": "Remember to Release the Arrow",
     "gg.credit": "&copy; 2026 by G.S.C. — all voices reserved",
 
-    "ii.about": "bout the writer. Gabriel Stroka Ceballos holds a degree in Communications from Faculdade Cásper Líbero, in São Paulo, and completed a degree in Philosophy at the University of São Paulo (USP), graduating with a 9.2 GPA. That return to formal study was driven less by career strategy than by an old, unresolved curiosity about how thought and language shape one another.",
-    "ii.publishedworks": "Published Works",
+    "ii.dropcap": "A",
+    "ii.about": "bout the writer. Gabriel Stroka Ceballos holds degrees in Communications from Faculdade Cásper Líbero and in Philosophy from the University of São Paulo (USP). Both degrees driven mostly by curiosity about how thought, world, and language shape one another.",
+    "ii.publishedworks": "Selected Publications, Journals and Texts",
     "ii.languagetheory": "Language Theory",
     "ii.practice": "The literary practice began with poetry and has developed across poetry, fiction, and essays on language. In 2022, he published his poetry collection <em>Não foi assim que nos pediram os que morriam?</em> with Urutau, followed by the novel <em>Coração pequeno</em> with Cachalote in 2025. The novel is built around a sustained stream of consciousness, interrupted by ruptures in awareness.",
     "ii.alongside": "His literary writing has developed alongside a long professional engagement with language in advertising and communications, as well as academic work in Philosophy.",
@@ -108,6 +109,7 @@ const translations = {
     "kk.writeghost": "write to the ghost",
     "kk.languages": "languages",
     "kk.basedin": "based in",
+    "kk.basedvalue": "São Paulo",
     "kk.endnote": "— act, act, act.",
 
     "audio.silence": "Silence playing in the background",
@@ -144,8 +146,9 @@ const translations = {
     "gg.arrow": "Lembre-se de Soltar a Flecha",
     "gg.credit": "&copy; 2026 por G.S.C. — todas as vozes reservadas",
 
-    "ii.about": "obre o escritor. Gabriel Stroka Ceballos é formado em Comunicação pela Faculdade Cásper Líbero, em São Paulo, e concluiu a graduação em Filosofia pela Universidade de São Paulo (USP), com média 9,2. Esse retorno ao estudo formal foi motivado menos por estratégia de carreira do que por uma antiga, não resolvida, curiosidade sobre como pensamento e linguagem se moldam mutuamente.",
-    "ii.publishedworks": "Obras Publicadas",
+    "ii.dropcap": "S",
+    "ii.about": "obre o escritor. Gabriel Stroka Ceballos é formado em Comunicação pela Faculdade Cásper Líbero e em Filosofia pela Universidade de São Paulo (USP). Duas formações motivadas principalmente pela curiosidade sobre como pensamento, mundo e linguagem se moldam mutuamente.",
+    "ii.publishedworks": "Publicações, revistas e textos selecionados",
     "ii.languagetheory": "Teoria da Linguagem",
     "ii.practice": "A prática literária começou com a poesia e se desenvolveu em poesia, ficção e ensaios sobre a linguagem. Em 2022, publicou a coletânea de poemas <em>Não foi assim que nos pediram os que morriam?</em> pela Urutau, seguida do romance <em>Coração pequeno</em> pela Cachalote em 2025. O romance é construído em torno de um fluxo contínuo de consciência, interrompido por rupturas de percepção.",
     "ii.alongside": "A escrita literária se desenvolveu ao lado de um longo trabalho profissional com linguagem em publicidade e comunicação, assim como o trabalho acadêmico em Filosofia.",
@@ -171,7 +174,8 @@ const translations = {
     "kk.elvate": "el vate",
     "kk.writeghost": "escreva ao fantasma",
     "kk.languages": "idiomas",
-    "kk.basedin": "baseado em",
+    "kk.basedin": "radicado e residente em",
+    "kk.basedvalue": "São Paulo",
     "kk.endnote": "— aja, aja, aja.",
 
     "audio.silence": "Silêncio tocando ao fundo",
@@ -206,8 +210,13 @@ langButtons.forEach((btn) => {
   btn.addEventListener("click", () => applyLanguage(btn.dataset.lang));
 });
 
-let savedLang = "en";
+function detectDefaultLang() {
+  const browserLang = (navigator.language || navigator.userLanguage || "en").toLowerCase();
+  return browserLang.startsWith("pt") ? "pt" : "en";
+}
+
+let savedLang;
 try {
-  savedLang = localStorage.getItem("gsc-lang") || "en";
+  savedLang = localStorage.getItem("gsc-lang");
 } catch (_) {}
-applyLanguage(savedLang);
+applyLanguage(savedLang || detectDefaultLang());
